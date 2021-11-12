@@ -1,0 +1,19 @@
+bool visited[N];
+void dfs(int vertex){
+	
+  // take action on vertex before going to child node
+	
+  visited[vertex]=true;
+	for(int child: graph[vertex]){
+		
+    //take action on child before entering the child node
+		
+    if(visited[child])continue;
+		
+    // take action on child after exiting from child
+		
+    dfs(child);
+	}
+	
+  // take action on vertex before returning from vertex
+}
