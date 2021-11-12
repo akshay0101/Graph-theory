@@ -17,7 +17,7 @@ void dfs(int vertex){
 	}
 }
 int main() {
-int n,e;
+int n,e;                                    T-O(v+e)
 cin>>n>>e;
 for(int i=0;i<e;i++){
 	int v1,v2;
