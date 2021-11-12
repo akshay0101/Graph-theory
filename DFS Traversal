@@ -2,7 +2,8 @@ bool visited[N];
 void dfs(int vertex){
 	
   // take action on vertex before going to child node
-	
+  // if(visisted[child])return;     ---- this can also be used
+  
   visited[vertex]=true;
 	for(int child: graph[vertex]){
 		
@@ -16,4 +17,5 @@ void dfs(int vertex){
 	}
 	
   // take action on vertex before returning from vertex
+  //T-O(N+E)
 }
